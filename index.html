@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地域密着型薬局</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #48a9a6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 10px 0;
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>地域密着型薬局</h1>
+        <p>地域の健康サポートを目指して</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">私たちについて</a></li>
+            <li><a href="#services">サービス</a></li>
+            <li><a href="#employment">雇用情報</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>私たちについて</h2>
+        <p>私たちは、地域に根ざした健康サポートを提供する薬局です。地域住民がいつでも気軽に立ち寄れる場所を提供し、コンビニのような便利さを目指しています。</p>
+    </section>
+    <section id="services">
+        <h2>サービス</h2>
+        <p>健康相談、処方薬の提供、健康関連製品の販売、地域イベントの開催など、多岐にわたるサービスを提供しています。</p>
+    </section>
+    <section id="employment">
+        <h2>雇用情報</h2>
+        <p>私たちと一緒に、地域の健康をサポートしませんか？若者の活躍を推進し、利益連動型インセンティブを導入して、全員が経営者として成長できる環境を整えています。</p>
+        <p>詳細は<a href="#contact">お問い合わせ</a>ください。</p>
+    </section>
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>興味のある方は、下記フォームよりお問い合わせください。</p>
+        <form action="/submit" method="post">
+            <label for="name">名前:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">メールアドレス:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">メッセージ:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br>
+            <input type="submit" value="送信">
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 地域密着型薬局. All rights reserved.</p>
+    </footer>
+</body>
+</html>
